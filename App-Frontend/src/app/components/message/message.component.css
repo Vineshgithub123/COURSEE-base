@@ -1,0 +1,29 @@
+.notificationmsg{
+    min-height: 90vh;
+}
+.trainerlist{
+    width: 50%;
+    padding: 25px;
+    border-radius: 10px;
+    padding-top: 0px;
+
+}
+.trainerdata{
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid  rgba(176, 196, 222, 0.340);
+    
+}
+.remov{
+    float: right;
+}
+.mbl{
+   border-top:1px solid rgba(0, 0, 0, 0.7);
+}
+.listbox{
+    border:1px solid rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 20px;
+
+
+}

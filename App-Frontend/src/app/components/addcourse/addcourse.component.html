@@ -1,0 +1,41 @@
+<div class="container">
+
+
+    <div class="d-flex justify-content-center">
+        <div class="formsin shadow">
+
+            <form #form="ngForm" (ngSubmit)="form.valid&&addCourse()">
+                <div class="mb-5">
+                    <h4 class="text-center" style="font-weight: 600;">Add Course</h4>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" style="font-weight: 600;">Course Name</label>
+                    <input type="string" class="form-control" required #course="ngModel" name="course" [(ngModel)]="courseData.course">
+                <small class="text-danger" *ngIf="form.submitted&&course.errors?.['required']">*Course Name required</small>
+            
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label" style="font-weight: 600;">Image Url</label>
+                    <input type="string" class="form-control" required #imageurl="ngModel" name="imageurl" [(ngModel)]="courseData.imageurl">
+                <small class="text-danger" *ngIf="form.submitted&&imageurl.errors?.['required']">*Image Url required</small>
+            
+                  </div>
+                    
+                <div class="mb-3">
+                    <label  class="form-label" style="font-weight: 600;">Description</label>
+                    <textarea type="string" class="form-control" row="20" required #message="ngModel" name="message" [(ngModel)]="courseData.message"></textarea>
+                    <small class="text-danger" *ngIf="form.submitted&&message.errors?.['required']">*Description required</small>
+
+                </div>
+
+                  <div class="d-grid mt-5">
+                    <button type="submit" class="btn btn-primary">Add Course</button>
+
+                  </div>
+              </form>
+        </div>
+
+</div>
+
+</div>

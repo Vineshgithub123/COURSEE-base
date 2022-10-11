@@ -1,0 +1,62 @@
+<div class="studentdata">
+
+    <div class="d-flex justify-content-center">
+        <div class="formsin shadow">
+
+            <form #form="ngForm" (ngSubmit)="form.valid&&enroll()" >
+                <div class="mb-5">
+                    <h4 class="text-center">Student Request</h4>
+                </div>
+                <div class="mb-3">
+                    <label  class="form-label" style="font-weight: 600;">Name</label>
+                    <input type="string" #username="ngModel" [(ngModel)]="enrolldata.username" class="form-control" required  name="username">
+                    <small class="text-danger" *ngIf="form.submitted&&username.errors?.['required']">*Username required</small>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" style="font-weight: 600;" class="form-label">Email address</label>
+                  <input type="email" disabled class="form-control" required #email="ngModel"  name="email" [(ngModel)]="enrolldata.email">
+                  <small class="text-danger" *ngIf="form.submitted&&email.errors?.['required']">*Email required</small>
+
+                </div>
+                <div class="mb-3">
+                  <label  class="form-label" style="font-weight: 600;">PhoneNumber</label>
+                  <input type="number"  class="form-control" required minlength="10" #phonenumber="ngModel" name="phonenumber" [(ngModel)]="enrolldata.phonenumber">
+                  <small class="text-danger" *ngIf="form.submitted&&phonenumber.errors?.['required']">*PhoneNumber required</small>
+                  <small class="text-danger" *ngIf="form.submitted&&phonenumber.errors?.['minlength']">*PhoneNumber Incorrect</small>
+
+                </div>
+                <div class="mb-3">
+                    <label  class="form-label" style="font-weight: 600;">Address</label>
+                    <input type="string" class="form-control" required name="address"  #address="ngModel"  [(ngModel)]="enrolldata.address" >
+                    <small class="text-danger" *ngIf="form.submitted&&address.errors?.['required']">*Address required</small>
+
+                </div>
+                  <div class="mb-3">
+                    <label  class="form-label" style="font-weight: 600;">Highest Qualification</label>
+                    <input type="string" class="form-control" required  name="qualification"  #qualification="ngModel" [(ngModel)]="enrolldata.qualification" >
+                    <small class="text-danger" *ngIf="form.submitted&&qualification.errors?.['required']">*Qualification required</small>
+                </div>
+
+                  <div class="mb-3">
+                    <label class="form-label" style="font-weight: 600;">Select Course</label>
+                      <input type="string" class="form-control" required #course="ngModel" name="course" [(ngModel)]="enrolldata.course">
+                      <small class="text-danger" *ngIf="form.submitted&&course.errors?.['required']">*Course required</small>
+
+                  </div>
+
+                  <div class="d-grid mt-5">
+                    <button type="submit" class="btn btn-primary">Approve</button>
+
+                  </div>
+
+
+                 
+
+              </form>
+
+        </div>
+    </div>
+
+
+
+</div>

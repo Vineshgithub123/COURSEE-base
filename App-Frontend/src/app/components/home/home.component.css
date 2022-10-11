@@ -1,0 +1,24 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+#hero {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+padding: 50px;
+}
+
+#h1{
+ font-size: 26px;
+ color: white;
+}
+#h2{
+  color: black(52, 16, 16);
+  font-size: 30px;
+}
+
+.btn{
+  border: 1px solid black;
+  color: whitesmoke;
+  background: -webkit-linear-gradient(rgb(96, 49, 49), #182848);
+}

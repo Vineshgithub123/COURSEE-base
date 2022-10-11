@@ -1,0 +1,23 @@
+
+
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Qualification</th>
+      <th>Course</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor=" let student of studentData" >
+      <td>{{student.username}}</td>
+      <td>{{student.qualification}}</td>
+      <td>{{student.email}}</td>
+      <td>{{student.course}}</td>
+     <td><button type="button" (click)="approvestudent(student)" class="btn btn-secondary" >Approve</button>
+      <button type="button" (click)="rejectstudent(student)" class="btn btn-secondary" >Reject</button></td>
+    </tr>
+  
+
+
+  </table>
+  

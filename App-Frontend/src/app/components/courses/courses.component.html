@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem;" *ngFor="let i of courses">
+    <img class="card-img-top" src="{{i.image}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{i.title}}</h5>
+      <p class="card-text">{{i.description}}</p>
+      <a routerLink="/stu-dash/enroll" class="btn btn-primary">Enroll</a>
+    </div>
+  </div>

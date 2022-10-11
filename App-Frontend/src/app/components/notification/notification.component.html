@@ -1,0 +1,34 @@
+<div class="notificationalert">
+
+    <div class="d-flex justify-content-center">
+        <div class="formsin shadow" style="background-color: whitesmoke;">
+
+            <form #form="ngForm" (ngSubmit)="form.valid&&messagealert()">
+                <div class="mb-5">
+                    <h4 class="text-center" >NOTIFY!!</h4>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label"  style="font-weight: 600;">Select Course</label>
+                    <select  class="form-select" #course="ngModel" [(ngModel)]="enrolldata.course" required  name="course" >
+                        <option *ngFor="let i of courses" value="{{i.title}}">{{i.title}}</option>
+                      </select>
+                      <small class="text-danger" *ngIf="form.submitted&&course.errors?.['required']">*Course required</small>
+
+                  </div>
+                    
+                <div class="mb-3">
+                    <label  class="form-label" style="font-weight: 600;">Message</label>
+                    <textarea type="string" class="form-control" row="20" #message="ngModel" required style="border: 1px solid black;"  name="message" [(ngModel)]="enrolldata.message" ></textarea>
+                    <small class="text-danger" *ngIf="form.submitted&&message.errors?.['required']">*Message required</small>
+
+                </div>
+
+                  <div class="d-grid mt-5">
+                    <button type="submit" class="btn btn-primary" >Send Notification</button>
+
+                  </div>
+              </form>
+        </div>
+    </div>
+
+</div>

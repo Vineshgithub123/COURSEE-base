@@ -1,0 +1,33 @@
+
+  .home{
+    margin-left: 350px;
+    margin-top: 50px;
+  }
+  .home h2{
+    color: rgb(65, 65, 123);
+  }
+  .home img{
+    border: solid 1px black;
+    width: 300px;
+    display: flex;
+  }
+  .home p{
+    width: 300px;
+  font-weight: bold;
+  }
+  .home #heading{
+    margin-left: 100px;
+    font-weight: 700;
+    background: -webkit-radial-gradient(rgb(42, 28, 86), rgb(183, 81, 81));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #enroll{
+    /* border: black solid 1px; */
+    color: black;
+    padding: 7px;
+    background-color: lightcoral;
+    border-radius: 10%;
+    text-decoration: none;
+    
+  }

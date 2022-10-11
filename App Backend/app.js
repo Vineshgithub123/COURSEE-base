@@ -22,7 +22,7 @@ mongoose.connect('mongodb+srv://Vinesh111:b9bapRgGMJqQrmvJ@cluster0.wvv3hu9.mong
   .then(() => {
     console.log("DB CONNECTED");
 })
-
+// routes
 app.use('/student', studentRoute );
 app.use('/professor',professorRoute);
 app.use('/auth',authRoute);

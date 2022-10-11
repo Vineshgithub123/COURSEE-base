@@ -1,0 +1,64 @@
+
+<nav class="shadow navbar navbar-expand-lg navbar-light  sticky-top" style="background-color: black;">
+    <div class="container-fluid">
+        <div class="mx-5 d-flex">
+            <!-- <div><a class="navbar-brand" routerLink=""><img src="../../assets/logo.png" style="width:65px" alt=""></a></div> -->
+             <div><h4 class="mt-3 hddn" style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(73, 173, 73);">COURSEE</h4></div>
+        </div>      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2" >
+  
+         
+
+   
+              </ul>
+        <div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="sidebar" #sidebar opened="true">
+  
+      <ul class="nav_list">
+        <!-- <li >
+          <a routerLink="/home_user" ></a></li> -->
+        <li >
+          <a routerLink="/stu-dash/dashboard" >
+            <i class='bx bx-folder'></i>
+            <span class="links_name" >Dashboard</span>
+          </a>
+        </li>
+        <li  >
+          <a routerLink="/stu-dash/enroll-form" >
+            <i class='bx bx-play'></i>
+            <span class="links_name" >Enroll</span>
+          </a>
+        </li>
+
+        <li >
+          <a routerLink="/stu-dash/courses" >
+            <i class='bx bxs-notepad'></i>
+            <span class="links_name">Courses</span>
+          </a>
+        </li>
+        <li >
+          <a routerLink="/stu-dash/message" >
+            <i class='bx bxs-bell'></i>
+            <span class="links_name">Notification</span>
+          </a>
+        </li>
+        <li >
+          <a routerLink="/login" (click)="logout()">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log Out</span>
+          </a>
+        </li>
+       
+     
+      </ul>
+    </div>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>

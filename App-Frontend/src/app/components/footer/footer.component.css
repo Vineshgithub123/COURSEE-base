@@ -1,0 +1,10 @@
+footer{
+    
+    box-shadow: 30px 60px;
+  background-color: black;
+  color: whitesmoke;
+}
+.social-links i{
+    padding-left: 7px;
+    font-size: 20px;
+}
