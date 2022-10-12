@@ -45,7 +45,7 @@
               <input type="password" class="form-control"  placeholder="Enter Password" #password="ngModel" name="password" [(ngModel)]="user.password" />
               <small class="text-danger" *ngIf="form.submitted&&password.errors?.['required']">*Password required</small>
               <small class="text-danger" *ngIf="form.submitted&&password.errors?.['minlength']">*Password must be 8 characters</small>                 </div>
-          <button type="submit" id="btnsign" class="btn" ><b>Sign Up</b></button><br>
+          <button type="submit" id="btnsign" class="btn" [disabled]="!form.valid"><b>Sign Up</b></button><br>
          <p id="msg"><b>Click </b><strong><a routerLink="/login"><b>here</b></a> </strong><b>to login</b></p>
         </form>  
       </div>
