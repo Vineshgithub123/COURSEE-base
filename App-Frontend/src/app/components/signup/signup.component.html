@@ -42,7 +42,7 @@
               </div>
              </div>
           <div>
-              <input type="password" class="form-control"  placeholder="Enter Password" #password="ngModel" name="password" [(ngModel)]="user.password" />
+              <input type="password" class="form-control"  placeholder="Enter Password" #password="ngModel" name="password" [(ngModel)]="user.password" required/>
               <small class="text-danger" *ngIf="form.submitted&&password.errors?.['required']">*Password required</small>
               <small class="text-danger" *ngIf="form.submitted&&password.errors?.['minlength']">*Password must be 8 characters</small>                 </div>
           <button type="submit" id="btnsign" class="btn" [disabled]="!form.valid"><b>Sign Up</b></button><br>
