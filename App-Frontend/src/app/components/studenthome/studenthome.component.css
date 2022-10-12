@@ -14,6 +14,8 @@
   .home p{
     width: 300px;
   font-weight: bold;
+      margin-left: 40px;
+  font-size: 20px;
   }
   .home #heading{
     margin-left: 100px;
