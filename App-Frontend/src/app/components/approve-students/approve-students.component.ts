@@ -27,7 +27,7 @@ export class ApproveStudentsComponent implements OnInit {
   enroll(){
     this.professorService.approvedstudent(this.enrolldata)
     alert("Sucessfully Approved Student")
-    this.route.navigate(["/professor/studentrequest"])
+    this.route.navigate(["/pro-dash/student-request"])
   }
   ngOnInit(): void {
     this.professorService.approvestudent(this.data).subscribe((data)=>{
